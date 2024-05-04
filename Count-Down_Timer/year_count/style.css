@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+* {
+
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    font-family: 'poppins', sans-serif;
+    background-image: url(/year_count/img/city.jpeg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    overflow: hidden;
+
+}
+
+h1 {
+    font-size: 3rem;
+    color: aquamarine;
+    margin-bottom: 10rem;
+
+}
+
+.countdown {
+    display: flex;
+    transform: scale(2);
+
+}
+
+small {
+    color: antiquewhite;
+}
+
+.time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+}
+
+.time h2 {
+    font-weight: bold;
+    font-size: 5rem;
+    line-height: 1;
+    margin: 0 0 5px;
+    color: rgb(247, 6, 66)
+}
+
+@media(max-width:992px) {
+    h1 {
+        font-size: 60px;
+
+    }
+
+    .time {
+        margin: 8px;
+    }
+
+    .time h2 {
+        font-size: 19px;
+    }
+
+    .time small {
+        font-size: 18px;
+    }
+
+}
+
+@media (max-width:550px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    .time {
+        margin: 5px;
+    }
+
+    .time h2 {
+        font-size: 12px;
+    }
+
+    .time small {
+        font-size: 10px;
+    }
+}
+
+.moving-heading {
+    position: fixed;
+    top: 10%;
+    left: 0;
+    /* Start from off-screen left */
+    transform: translateX(0);
+    /* Reset transform */
+    animation: moveRight 10s linear infinite;
+    z-index: 1;
+    /* Ensure it's above the countdown */
+}
+
+.countdown {
+    position: relative;
+    z-index: 0;
+}
+
+@keyframes moveRight {
+    from {
+        left: -60%;
+        /* Start from off-screen left */
+    }
+
+    to {
+        left: calc(60% - 100px);
+        /* Move to off-screen right */
+    }
+}

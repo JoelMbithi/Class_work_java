@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery Service</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <!-----SIDEBAR----->
+    <div class="sidebar">
+        <!------LOGO----->
+        <h1 class="logo">Joe's Tasty Yumville</h1>
+        <!----LIST OF MENU------>
+        <div class="sidebar-menus">
+            <a href="#"><ion-icon name="storefront-outline"></ion-icon>Home</a>
+            <a href="#"><ion-icon name="receipt-outline"></ion-icon>Bills</a>
+            <a href="#"><ion-icon name="wallet-outline"></ion-icon>Wallet</a>
+            <a href="#"><ion-icon name="notifications-outline"></ion-icon>Notification</a>
+            <a href="#"><ion-icon name="chatbubbles-outline"></ion-icon>Contact Us</a>
+            <a href="#"><ion-icon name="settings-outline"></ion-icon>Settings</a>
+        </div>
+        <!----LOOUT------>
+        <div class="sidebar-logout">
+            <a href="#"><ion-icon name="log-out-outline"></ion-icon>Logout</a>
+        </div>
+
+    </div>
+
+
+    <!-------MAIN----->
+    <div class="main">
+        <!----MAIN NAVBAR----->
+        <div class="main-navbar">
+            <!-----MENU WHICH APPEARS TO MOBILE VERSION----->
+            <ion-icon class="menu-toggle" name="menu-outline"></ion-icon>
+            <!-------SEARCH BAR----->
+            <div class="search">
+                <input type="text" placeholder="what you want to eat?">
+                <button class="search-btn">Search</button>
+            </div>
+            <!-----PROFILE ICON ON LEFT SIDE OF NAVBAR------->
+            <div class="profile">
+                <a href="#" class="cart"><ion-icon name="cart-outline"></ion-icon></a>
+                <a href="#" class="user"><ion-icon name="person-outline"></ion-icon></a>
+            </div>
+        </div>
+        <!----MAIN HIGHLIGHT ----->
+        <div class="main-highlight">
+            <!----TITLE SECTION AND ARROW----->
+            <div class="main-header">
+                <h2 class="main-title">Recommendations</h2>
+                <div class="main-arrow">
+                    <ion-icon class="back" name="chevron-back-circle-outline"></ion-icon>
+                    <ion-icon class="next" name="chevron-forward-circle-outline"></ion-icon>
+                </div>
+            </div>
+            <!-----HIGHLIGHT MENU-->
+            <div class="highlight-wrapper">
+                <div class="highlight-card">
+                    <img src="./img/salad.jpeg" alt="" class="highlight-img">
+                    <div class="highlight-desc">
+                        <h4>Fresh Salad</h4>
+                        <p>Ksh 2999</p>
+                    </div>
+                </div>
+                <div class="highlight-card">
+                    <img src="./img/coffee.jpeg" alt="" class="highlight-img">
+                    <div class="highlight-desc">
+                        <h4>Ice Coffee</h4>
+                        <p>Ksh 699</p>
+                    </div>
+                </div>
+                <div class="highlight-card">
+                    <img src="img/steak.jpeg" alt="" class="highlight-img">
+                    <div class="highlight-desc">
+                        <h4>Premium Steak</h4>
+                        <p>Ksh 980</p>
+                    </div>
+                </div>
+                <div class="highlight-card">
+                    <img src="./img/burger.jpeg" alt="" class="highlight-img">
+                    <div class="highlight-desc">
+                        <h4>Cheddar Burger</h4>
+                        <p>Ksh 120</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!----MAIN MENU / ORDERS-->
+        <div class="main-menus">
+            <!-----FILTER SECTION------->
+            <div class="main-filter">
+                <div>
+                    <h2 class="main-title">Menu <br>Cartegory</h2>
+                    <div class="main-arrow">
+                        <ion-icon class="back-menus" name="chevron-back-circle-outline"></ion-icon>
+                        <ion-icon class="next-menus" name="chevron-forward-circle-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="filter-wrapper">
+                    <div class="filter-card">
+                        <div class="filter-icon">
+                            <ion-icon name="restaurant-outline"></ion-icon>
+                        </div>
+                        <p>All Menus</p>
+                    </div>
+                    <div class="filter-card">
+                        <div class="filter-icon">
+                            <ion-icon name="fast-food-outline"></ion-icon>
+                        </div>
+                        <p>Burger</p>
+                    </div>
+                    <div class="filter-card">
+                        <div class="filter-icon">
+                            <ion-icon name="pizza-outline"></ion-icon>
+                        </div>
+                        <p>Pizza</p>
+                    </div>
+                    <div class="filter-card">
+                        <div class="filter-icon">
+                            <ion-icon name="wine-outline"></ion-icon>
+                        </div>
+                        <p>Wine</p>
+                    </div>
+                    <div class="filter-card">
+                        <div class="filter-icon">
+                            <ion-icon name="ice-cream-outline"></ion-icon>
+                        </div>
+                        <p>Ice-Cream</p>
+                    </div>
+                    <div class="filter-card">
+                        <div class="filter-icon">
+                            <ion-icon name="cafe-outline"></ion-icon>
+                        </div>
+                        <p>Coffee</p>
+                    </div>
+                    <div class="filter-card">
+                        <div class="filter-icon">
+                            <ion-icon name="fish-outline"></ion-icon>
+                        </div>
+                        <p>SeaFood</p>
+                    </div>
+                    <div class="filter-card">
+                        <div class="filter-icon">
+                            <ion-icon name="nutrition-outline"></ion-icon>
+                        </div>
+                        <p>Healthy</p>
+                    </div>
+                </div>
+            </div>
+            <hr class="divider">
+            <!-----LIST OF FOOOD----->
+            <div class="main-detail">
+                <div class="main-title">
+                    <h2>Choose Order</h2>
+                    <div class="detail-wrapper">
+                        <div class="detail-card">
+                            <img src="./img/seafood.jpeg" alt="" class="detail-img">
+                            <div class="detail-desc">
+                                <div class="detail-name">
+                                    <h4 class="h4">Shrip Soup</h4>
+                                    <p class="detail-sub">Delight in our shrimp soup: succulent shrimp, fresh veggies,
+                                        aromatic herbs.
+                                        Order
+                                        now!</p>
+                                    <p class="price">Ksh 500</p>
+                                </div>
+                                <ion-icon class="detail-favourites" name="bookmark-outline"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="detail-card">
+                            <img src="./img/pizza.jpeg" alt="" class="detail-img">
+                            <div class="detail-desc">
+                                <div class="detail-name">
+                                    <h4 class="h4">Pizza</h4>
+                                    <p class="detail-sub">Indulge in the perfect harmony of savory toppings, gooey
+                                        cheese, and a crispy crust - order now for a mouthwatering pizza experience
+                                        delivered to your doorstep!</p>
+                                    <p class="price">Ksh 1200</p>
+                                </div>
+                                <ion-icon class="detail-favourites" name="bookmark-outline"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="detail-card">
+                            <img src="./img/wine.jpeg" alt="" class="detail-img">
+                            <div class="detail-desc">
+                                <div class="detail-name">
+                                    <h4>Wine</h4>
+                                    <p class="detail-sub">Enhance your dining experience with the perfect wine pairing
+                                        for our delicious pizza - order now and elevate your meal!</p>
+                                    <p class="price">Ksh 1230</p>
+                                </div>
+                                <ion-icon class="detail-favourites" name="bookmark-outline"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="detail-card">
+                            <img src="./img/burger.jpeg" alt="" class="detail-img">
+                            <div class="detail-desc">
+                                <div class="detail-name">
+                                    <h4>Burger</h4>
+                                    <p class="detail-sub">Sink your teeth into juicy perfection with our signature
+                                        burger - order now for a taste that's simply irresistible!</p>
+                                    <p class="price">Ksh 200</p>
+                                </div>
+                                <ion-icon class="detail-favourites" name="bookmark-outline"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="detail-card">
+                            <img src="img/HotCoffee.jpeg" alt="" class="detail-img">
+                            <div class="detail-desc">
+                                <div class="detail-name">
+                                    <h4>Hot Cafe Latte</h4>
+                                    <p class="detail-sub">Awaken your senses with the rich aroma and bold flavor of our
+                                        premium coffee - order now for a perfect pick-me-up!</p>
+                                    <p class="price">Ksh 500</p>
+                                </div>
+                                <ion-icon class="detail-favourites" name="bookmark-outline"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="detail-card">
+                            <img src="./img/HotSalad.jpeg" alt="" class="detail-img">
+                            <div class="detail-desc">
+                                <div class="detail-name">
+                                    <h4>Fresh Salad</h4>
+                                    <p class="detail-sub">Elevate your greens game with our fresh and flavorful salad -
+                                        order now for a healthy and delicious meal option!</p>
+                                    <p class="price">Ksh 1108</p>
+                                </div>
+                                <ion-icon class="detail-favourites" name="bookmark-outline"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="detail-card">
+                            <img src="./img/chicken.jpeg" alt="" class="detail-img">
+                            <div class="detail-desc">
+                                <div class="detail-name">
+                                    <h4>Chicken </h4>
+                                    <p class="detail-sub">Savor succulent perfection with our mouthwatering chicken -
+                                        order now for a deliciously satisfying meal!</p>
+                                    <p class="price">Ksh 650</p>
+                                </div>
+                                <ion-icon class="detail-favourites" name="bookmark-outline"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="detail-card">
+                            <img src="./img/sausage.jpeg" alt="" class="detail-img">
+                            <div class="detail-desc">
+                                <div class="detail-name">
+                                    <h4>Sausage </h4>
+                                    <p class="detail-sub">Indulge in savory delight with our premium sausage - order now
+                                        for a flavorful addition to any meal!</p>
+                                    <p class="price">Ksh 340</p>
+                                </div>
+                                <ion-icon class="detail-favourites" name="bookmark-outline"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="detail-card">
+                            <img src="./img/biryani.jpeg" alt="" class="detail-img">
+                            <div class="detail-desc">
+                                <div class="detail-name">
+                                    <h4>Biryani </h4>
+                                    <p class="detail-sub">Transport your taste buds with our aromatic and flavorful
+                                        biryani - order now for an unforgettable culinary journey!</p>
+                                    <p class="price">Ksh 1530</p>
+                                </div>
+                                <ion-icon class="detail-favourites" name="bookmark-outline"></ion-icon>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<!------SCRIPT JS----->
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="./index.js"></script>
+
+</html>

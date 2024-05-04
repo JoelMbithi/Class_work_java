@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    font-family: 'popping', sans-serif;
+    background-image: url(./img/image.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+
+
+.countDown {
+    display: flex;
+    flex-direction: column;
+    transform: scale(2);
+}
+
+.moving {
+    font-size: 2rem;
+    margin-bottom: 9rem;
+    color: aqua;
+
+}
+
+.date {
+    align-items: center;
+    justify-content: center;
+    margin: 0.2rem;
+}
+
+.date h2 {
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin: 0 0 4px;
+    color: aquamarine;
+}
+
+small {
+    color: rgb(0, 0, 0);
+}
+
+@media (max-width: 670px) {
+    .moving {
+        font-size: 15px;
+        margin-top: -8rem;
+        margin-left: 2rem;
+
+    }
+
+    .date {
+        margin: 0.2rem;
+
+    }
+
+    .date h2 {
+        font-size: 1.7rem;
+    }
+
+    .dayte small {
+        font-size: 2px;
+    }
+}
+
+.moving {
+    position: fixed;
+    top: 10%;
+    left: 0;
+    /* Start from off-screen left */
+    transform: translateX(0);
+    /* Reset transform */
+    animation: moveRight 10s linear infinite;
+    z-index: 1;
+    /* Ensure it's above the countdown */
+}
+
+.countDown {
+    position: relative;
+    z-index: 0;
+}
+
+@keyframes moveRight {
+    from {
+        left: -60%;
+        /* Start from off-screen left */
+    }
+
+    to {
+        left: calc(60% - 100px);
+        /* Move to off-screen right */
+    }
+}

@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #153677, #4e085f);
+    padding: 10px;
+}
+
+.todo-app {
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    color: #002765;
+}
+
+.todo-app h2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.todo-app h2 img {
+    width: 80px;
+    margin-left: 10px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+.input-box {
+    flex: 1;
+    border: none !important;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #ff5945;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+ul li {
+    list-style: none;
+    /* Remove default list style */
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li.checked {
+    text-decoration: line-through;
+    /* Add line-through text decoration for checked items */
+    color: #555;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 20px;
+    /* Adjust the size of the circle */
+    width: 20px;
+    /* Adjust the size of the circle */
+    border-radius: 50%;
+    border: 2px solid rgb(189, 186, 186);
+    /* Set the border to black */
+    background-color: transparent;
+    /* Set the background color to transparent */
+    top: 50%;
+    /* Adjust the vertical positioning */
+    transform: translateY(-50%);
+    /* Center the circle vertically */
+    left: 16px;
+    /* Adjust the horizontal positioning */
+}
+
+ul li.checked::before {
+    background-color: #ff5945;
+    /* Change the background color to red for checked items */
+
+}
+
+
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50px;
+}
+
+ul li span:hover {
+    background: #edeef0;
+}
