@@ -1,0 +1,24 @@
+* {
+    text-align: center;
+
+}
+
+#enterDetails {
+    float: left;
+    width: 50%;
+    background-color: darkslategray;
+    color: azure;
+
+}
+
+#findDtails {
+    float: left;
+    width: 50%;
+    background-color: rgb(206, 212, 212);
+    color: rgb(3, 3, 3);
+
+}
+
+input {
+    width: 120px;
+}
